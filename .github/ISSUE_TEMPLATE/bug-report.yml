@@ -1,0 +1,38 @@
+name: 錯誤報告
+description: 建立報告以幫助我們改進
+labels: [bug]
+body:
+  - type: checkboxes
+    attributes:
+      label: "检查项"
+      description: "请逐个检查下列项目，并勾选确认。"
+      options:
+        - label: "我已在 [Issues 页面](/issues?q=is%3Aissue+)中搜索，确认了这一提案未被提交过。"
+          required: true
+  - type: textarea
+    attributes:
+      label: 描述錯誤
+      description: 對於錯誤的清晰而簡潔的描述。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 預期行為
+      description: 對您期望發生的情況的清晰而簡潔的描述。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 截圖
+      description: 如果適用，請添加螢幕截圖來幫助解釋您的問題。
+  - type: textarea
+    attributes:
+      label: 系統資訊
+      value: |
+        - os: [ex: windows]
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 其他背景資訊
+      description: 在此處添加有關該問題的任何其他背景資訊。
