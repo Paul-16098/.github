@@ -2,8 +2,7 @@
 
 version: 2
 updates:
-  - &a
-    package-ecosystem: "npm"
+  - package-ecosystem: "npm"
     directory: /
     open-pull-requests-limit: 5
     rebase-strategy: auto
@@ -13,19 +12,55 @@ updates:
       - Paul-16098
 
   - package-ecosystem: cargo
-    <<: *a
+    directory: /
+    open-pull-requests-limit: 5
+    rebase-strategy: auto
+    schedule:
+      interval: daily
+    assignees:
+      - Paul-16098
 
   - package-ecosystem: github-actions
-    <<: *a
+    directory: /
+    open-pull-requests-limit: 5
+    rebase-strategy: auto
+    schedule:
+      interval: daily
+    assignees:
+      - Paul-16098
 
   - package-ecosystem: gitsubmodule
-    <<: *a
+    directory: /
+    open-pull-requests-limit: 5
+    rebase-strategy: auto
+    schedule:
+      interval: daily
+    assignees:
+      - Paul-16098
 
   - package-ecosystem: pip
-    <<: *a
+    directory: /
+    open-pull-requests-limit: 5
+    rebase-strategy: auto
+    schedule:
+      interval: daily
+    assignees:
+      - Paul-16098
 
   - package-ecosystem: rust-toolchain
-    <<: *a
+    directory: /
+    open-pull-requests-limit: 5
+    rebase-strategy: auto
+    schedule:
+      interval: daily
+    assignees:
+      - Paul-16098
 
   - package-ecosystem: uv
-    <<: *a
+    directory: /
+    open-pull-requests-limit: 5
+    rebase-strategy: auto
+    schedule:
+      interval: daily
+    assignees:
+      - Paul-16098
